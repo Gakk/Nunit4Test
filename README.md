@@ -24,6 +24,11 @@ No suitable tests found in '.\bin\Debug\net48\NUnit4Test.dll'.
 Either assembly contains no tests or proper test driver has not been found.
 ```
 
+> [!IMPORTANT]
+> My project are targetting .NET Framework and are using the task `ResolveCOMReference` that is not supported
+> by `dotnet msbuild`, and this is the reason to still use the old `msbuild`. More info:
+> https://learn.microsoft.com/nb-no/visualstudio/msbuild/resolvecomreference-task?view=vs-2022#msb4803-error
+
 ## Demonstration
 
 This repository has a minimal example that demonstrates my issue. It has configured a GitHub Action
