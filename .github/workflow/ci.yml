@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+
+  buildAndTest:
+    name: Build & Test
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+
+    - name: Setup MSBuild.exe
+      uses: microsoft/setup-msbuild@1ff57057b5cfdc39105cd07a01d78e9b0ea0c14c # v1.3.1
+
+    - name: Setup NuGet.exe
+      uses: NuGet/setup-nuget@296fd3ccf8528660c91106efefe2364482f86d6f # v1.2.0
+
+    - name: Restore NuGet packages
+      run: msbuild /t:Restore /maxcpucount
+
+    - name: Build Debug for Test
+      run: msbuild /t:Rebuild /p:Configuration=Debug
+
+    - name: Install NUnit Console
+      run: nuget.exe install NUnit.Console -Version 3.16.3 -o packages
+
+    - name: Run tests
+      run: .\packages\NUnit.ConsoleRunner.3.16.3\tools\nunit3-console.exe .\bin\Debug\net48\NUnit4Test.dll

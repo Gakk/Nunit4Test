@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnit4Test", "NUnit4Test.csproj", "{3952DB85-D6E6-4485-A559-8C66CD4601C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3952DB85-D6E6-4485-A559-8C66CD4601C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3952DB85-D6E6-4485-A559-8C66CD4601C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3952DB85-D6E6-4485-A559-8C66CD4601C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3952DB85-D6E6-4485-A559-8C66CD4601C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2233572C-BCE4-4520-B4C8-9E571ABF2BFA}
+	EndGlobalSection
+EndGlobal
