@@ -45,6 +45,9 @@ Further both branches are using:
  - **`<PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />`**
  - **`<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />`**
 
+> [!TIP]
+> Local testing can be done by running `build-and-test.ps1`.
+
 ### Test results
 
 The branch with NUnit 3.14.0 is succeeding, and the branch with NUnit 4.0 is failing:
