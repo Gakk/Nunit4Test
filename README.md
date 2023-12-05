@@ -1,3 +1,11 @@
+# RESOLVED ✅
+
+### One of the maintainers of NUnit confirmed that the newest NUnit Console had an issue. Downgrading from 3.16.x to 3.15.5 resolved the issue.
+
+_More info on: https://github.com/nunit/nunit/issues/4579_
+
+<hr />
+
 # Toubleshooting NUnit4 with MSBUILD
 
 ## Background
